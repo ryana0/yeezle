@@ -205,7 +205,7 @@ function gameEnd(win) {
     }
 
     numPlayed.textContent = JSON.parse(window.localStorage.getItem('gamesPlayed'))
-    winPercent.textContent = (Number.parseInt(JSON.parse(window.localStorage.getItem('wins'))) / Number.parseInt(JSON.parse(window.localStorage.getItem('gamesPlayed')))).toFixed(1) * 100 + '%'
+    winPercent.textContent = (Number.parseInt(JSON.parse(window.localStorage.getItem('wins'))) / Number.parseInt(JSON.parse(window.localStorage.getItem('gamesPlayed')))).toFixed(3) * 100 + '%'
 
     if (win) {
         results.textContent = 'YOU WON!'
